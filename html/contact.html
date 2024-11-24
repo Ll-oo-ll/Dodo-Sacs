@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+    background: white;
+    padding: 10px;
+    color: black;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+header, footer {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.contact-form {
+    width: 100%;
+    max-width: 600px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border: 1.5px solid black;
+    transition: 0.4s linear;
+    box-sizing: border-box;
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1.5px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: #ffe715;
+    color: black;
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    .contact-form {
+        padding: 15px;
+    }
+}
+input , textarea {
+    outline: none;
+    color:#ffe715 ;
+}
+    </style>
+</head>
+<body>
+
+<header>
+    <h1 style="color: #ffe715;">Contact Us</h1>
+</header>
+
+<main class="main-container">
+    <div class="contact-form">
+        <h2>Get in Touch</h2>
+        <form action="contact.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <label for="interest">Interest:</label>
+            <select id="interest" name="interest">
+                <option value="Dior">Dior</option>
+                <option value="Chanel">Chanel</option>
+                <option value="Hermes">Hermés</option>
+                <option value="Gucci">Gucci</option>
+                <option value="LV">Louis Vuitton </option>
+            </select>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</main>
+
+
+
+</body>
+</html>
