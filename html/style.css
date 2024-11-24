@@ -61,27 +61,11 @@ main{
     margin: 4%;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
-    border: 1.5px solid black;
-    border-radius: 10px;
-    border-bottom: 15px solid black; 
+    background-position: center center; 
     transition: .4s linear;  
     position: relative;
 }
-.img::after{
-    content: "★";
-    color: #ffe715;
-    width: 30px;
-    display: flex;
-    justify-content: center;
-    
-    height: 30px;
-    background: black;
-    border-radius: 50%;
-    position: absolute;
-    top: -10px;
-    left: -10px;
-}
+
 @keyframes start {
     0%{
         opacity: 0;
